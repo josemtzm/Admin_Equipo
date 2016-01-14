@@ -168,14 +168,38 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\EquiposController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\AREAS.cs" />
+    <Compile Include="Models\AsignacionDB.cs" />
+    <Compile Include="Models\Asignaciones.cs" />
+    <Compile Include="Models\CANDADO.cs" />
+    <Compile Include="Models\CAT_BASE.cs" />
+    <Compile Include="Models\CAT_DIRECCION.cs" />
+    <Compile Include="Models\CAT_DIV.cs" />
+    <Compile Include="Models\CAT_ESTADOS.cs" />
+    <Compile Include="Models\CAT_PERS.cs" />
+    <Compile Include="Models\CAT_POSICION.cs" />
+    <Compile Include="Models\CAT_SUBDIV.cs" />
+    <Compile Include="Models\CAT_UNIDAD_ORG.cs" />
+    <Compile Include="Models\CECO.cs" />
+    <Compile Include="Models\DOCK_STATION.cs" />
+    <Compile Include="Models\Equipos.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
+    <Compile Include="Models\MARCA_EQUIPO.cs" />
+    <Compile Include="Models\MONITOR.cs" />
+    <Compile Include="Models\MOUSE.cs" />
+    <Compile Include="Models\OFICINAS.cs" />
+    <Compile Include="Models\PERIFERICOS.cs" />
+    <Compile Include="Models\TECLADO.cs" />
+    <Compile Include="Models\TIPO_EQUIPO.cs" />
+    <Compile Include="Models\Usuarios.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -234,6 +258,11 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Equipos\Create.cshtml" />
+    <Content Include="Views\Equipos\Delete.cshtml" />
+    <Content Include="Views\Equipos\Details.cshtml" />
+    <Content Include="Views\Equipos\Edit.cshtml" />
+    <Content Include="Views\Equipos\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,111 @@
+﻿@model IEnumerable<Admin_Equipos.Models.Equipos>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SERIE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MODELO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TIPO_EQUIPO_ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MARCA_EQUIPO_ID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PROCESADOR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MEMORIA)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DISCO_DURO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MAC_ETH)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MAC_WIFI)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NO_SERIE_TECLADO)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NO_SERIE_MOUSE)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NO_SERIE_MONITOR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NO_SERIE_DOCK_STATION)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NO_SERIE_CANDADO)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SERIE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MODELO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TIPO_EQUIPO_ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MARCA_EQUIPO_ID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PROCESADOR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MEMORIA)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DISCO_DURO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MAC_ETH)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MAC_WIFI)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NO_SERIE_TECLADO)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NO_SERIE_MOUSE)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NO_SERIE_MONITOR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NO_SERIE_DOCK_STATION)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NO_SERIE_CANDADO)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>
